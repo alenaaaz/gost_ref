@@ -54,10 +54,11 @@ export class DataProcessor {
     
         if (includePages) {
             if (addDash) {
-                reference += ` - С. ${pages}.`;
-            } else {
-                reference += ` С. ${pages}.`;
+                reference += `${addDash ? '-' : ''} С. ${pages}.`;
             }
+            // } else {
+            //     reference += ` С. ${pages}.`;
+            // }
         }
     
         return reference;
